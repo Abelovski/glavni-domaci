@@ -1,22 +1,182 @@
-@import 'vars';
-@import 'mixins';
-@include main;
-body {}
-
-header {
-    width: 100%;
-    height: 36em;
-    background: url('../slike/intro.jpg');
-    background-image: cover;
-    nav.mainNavigation {
-        background-color: $Tamno-plava;
-        li {
+        @import 'vars';
+        @import 'mixins';
+        @include main;
+        body {}
+        
+        header {
+            nav.mainNavigation {
+                background-color: $Tamno-plava;
+                width: 100%;
+                height: 4em;
+                ul {
+                    width: 100%;
+                    display: inline-block;
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        line-height: 4em;
+                        /* width: ;*/
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        
+        li.red {
             display: inline-block;
+            width: 20%;
+            background-color: $Narandzasta;
             color: white;
         }
-    }
-}
-
-section {}
-
-footer {}
+        
+        section.cover {
+            width: 100%;
+            height: 36em;
+            background: url('../slike/intro.jpg');
+            background-image: cover;
+        }
+        
+        .floater {
+            display: inline-block;
+            width: 70%;
+            background-color: rgba(89, 89, 89, 0.45);
+            margin: 25% 0 0 15%;
+            h1 {
+                @include font;
+                width: 55%;
+                font-size: 2.35em;
+                padding: 0%;
+                text-transform: none;
+            }
+            h2 {
+                @include font;
+                font-size: 1em;
+            }
+        }
+        
+        section.two {
+            background-color: white;
+            width: 100%;
+            height: 6em;
+            padding-top: 2%;
+            .button {
+                background-color: white;
+                color: #8c8c8c;
+                border: 1px solid #8c8c8c;
+                border-radius: 25px;
+                float: right;
+                text-decoration: none;
+                width: 10%;
+                text-align: center;
+                line-height: 3em;
+                margin-right: 3%;
+                &:hover {
+                    background-color: $Svetlo-siva1;
+                }
+            }
+        }
+        
+        section.images {
+            background-color: $Svetlo-siva2;
+            width: 100%;
+            .column {
+                display: inline-block;
+                width: 25%;
+                white-space: nowrap;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 60%;
+                }
+            }
+        }
+        
+        section {
+            background-color: white;
+            width: 100%;
+            h1 {
+                text-transform: uppercase;
+                color: $Naslovi;
+                text-align: center;
+                padding: 2%;
+            }
+            h2 {
+                color: $Boja-fonta;
+                text-align: center;
+                font-size: 1em;
+                padding: 2%;
+            }
+            table {
+                display: inline-block;
+                border-collapse: collapse;
+                margin: 0 auto;
+                text-align: center;
+                margin-right: -5px;
+                th,
+                tr,
+                td {
+                    border: 1px solid $Boja-fonta;
+                    color: $Boja-fonta;
+                    width: 10em;
+                    height: 2em;
+                }
+                .color {
+                    background-color: $Narandzasta;
+                    color: white
+                }
+                .colorB {
+                    color: white;
+                    background-color: $Tamno-plava;
+                }
+            }
+        }
+        
+        .right {
+            padding-left: 25%;
+        }
+        
+        section {
+            background-color: $Svetlo-siva2;
+            h1 {
+                color: $Naslovi;
+                text-align: center;
+            }
+            iframe {
+                margin-left: 10%;
+            }
+            form {
+                display: inline-block;
+                background-color: $Narandzasta;
+                width: 40%;
+                margin: 0 0 5% 10%;
+                padding: 2%;
+                select {
+                    width: 25%;
+                    height: 3em;
+                    margin-right: 2em;
+                }
+                input {
+                    width: 67%;
+                    height: 3em;
+                    margin-bottom: 2em;
+                }
+                textarea {
+                    width: 98%;
+                    height: 6em;
+                    margin: 0;
+                }
+            }
+        }
+        
+        footer {
+            background-color: $Tamno-plava;
+            text-align: center;
+            color: white;
+            padding: 1%;
+            .redText {
+                color: $Narandzasta;
+            }
+        }

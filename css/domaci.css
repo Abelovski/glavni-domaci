@@ -1,24 +1,221 @@
 /* line 2, ../sass/_mixins.scss */
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
-/* line 6, ../sass/domaci.scss */
-header {
+/* line 7, ../sass/domaci.scss */
+header nav.mainNavigation {
+  background-color: #374249;
+  width: 100%;
+  height: 4em;
+}
+/* line 11, ../sass/domaci.scss */
+header nav.mainNavigation ul {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+}
+/* line 15, ../sass/domaci.scss */
+header nav.mainNavigation ul li {
+  display: inline-block;
+  line-height: 4em;
+  /* width: ;*/
+}
+/* line 19, ../sass/domaci.scss */
+header nav.mainNavigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 28, ../sass/domaci.scss */
+li.red {
+  display: inline-block;
+  width: 20%;
+  background-color: #f75311;
+  color: white;
+}
+
+/* line 35, ../sass/domaci.scss */
+section.cover {
   width: 100%;
   height: 36em;
   background: url("../slike/intro.jpg");
   background-image: cover;
 }
-/* line 11, ../sass/domaci.scss */
-header nav.mainNavigation {
+
+/* line 42, ../sass/domaci.scss */
+.floater {
+  display: inline-block;
+  width: 70%;
+  background-color: rgba(89, 89, 89, 0.45);
+  margin: 25% 0 0 15%;
+}
+/* line 47, ../sass/domaci.scss */
+.floater h1 {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 auto;
+  width: 55%;
+  font-size: 2.35em;
+  padding: 0%;
+  text-transform: none;
+}
+/* line 54, ../sass/domaci.scss */
+.floater h2 {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+/* line 60, ../sass/domaci.scss */
+section.two {
+  background-color: white;
+  width: 100%;
+  height: 6em;
+  padding-top: 2%;
+}
+/* line 65, ../sass/domaci.scss */
+section.two .button {
+  background-color: white;
+  color: #8c8c8c;
+  border: 1px solid #8c8c8c;
+  border-radius: 25px;
+  float: right;
+  text-decoration: none;
+  width: 10%;
+  text-align: center;
+  line-height: 3em;
+  margin-right: 3%;
+}
+/* line 76, ../sass/domaci.scss */
+section.two .button:hover {
+  background-color: #cfd1d3;
+}
+
+/* line 82, ../sass/domaci.scss */
+section.images {
+  background-color: #f3f7f9;
+  width: 100%;
+}
+/* line 85, ../sass/domaci.scss */
+section.images .column {
+  display: inline-block;
+  width: 25%;
+  white-space: nowrap;
+}
+/* line 89, ../sass/domaci.scss */
+section.images .column img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+/* line 97, ../sass/domaci.scss */
+section {
+  background-color: white;
+  width: 100%;
+}
+/* line 100, ../sass/domaci.scss */
+section h1 {
+  text-transform: uppercase;
+  color: #374249;
+  text-align: center;
+  padding: 2%;
+}
+/* line 106, ../sass/domaci.scss */
+section h2 {
+  color: #797979;
+  text-align: center;
+  font-size: 1em;
+  padding: 2%;
+}
+/* line 112, ../sass/domaci.scss */
+section table {
+  display: inline-block;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: -5px;
+}
+/* line 118, ../sass/domaci.scss */
+section table th,
+section table tr,
+section table td {
+  border: 1px solid #797979;
+  color: #797979;
+  width: 10em;
+  height: 2em;
+}
+/* line 126, ../sass/domaci.scss */
+section table .color {
+  background-color: #f75311;
+  color: white;
+}
+/* line 130, ../sass/domaci.scss */
+section table .colorB {
+  color: white;
   background-color: #374249;
 }
-/* line 13, ../sass/domaci.scss */
-header nav.mainNavigation li {
+
+/* line 137, ../sass/domaci.scss */
+.right {
+  padding-left: 25%;
+}
+
+/* line 141, ../sass/domaci.scss */
+section {
+  background-color: #f3f7f9;
+}
+/* line 143, ../sass/domaci.scss */
+section h1 {
+  color: #374249;
+  text-align: center;
+}
+/* line 147, ../sass/domaci.scss */
+section iframe {
+  margin-left: 10%;
+}
+/* line 150, ../sass/domaci.scss */
+section form {
   display: inline-block;
+  background-color: #f75311;
+  width: 40%;
+  margin: 0 0 5% 10%;
+  padding: 2%;
+}
+/* line 156, ../sass/domaci.scss */
+section form select {
+  width: 25%;
+  height: 3em;
+  margin-right: 2em;
+}
+/* line 161, ../sass/domaci.scss */
+section form input {
+  width: 67%;
+  height: 3em;
+  margin-bottom: 2em;
+}
+/* line 166, ../sass/domaci.scss */
+section form textarea {
+  width: 98%;
+  height: 6em;
+  margin: 0;
+}
+
+/* line 174, ../sass/domaci.scss */
+footer {
+  background-color: #374249;
+  text-align: center;
   color: white;
+  padding: 1%;
+}
+/* line 179, ../sass/domaci.scss */
+footer .redText {
+  color: #f75311;
 }
